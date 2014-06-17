@@ -1,4 +1,4 @@
-## This function library provided two functions to assist in the computation
+## This function library provides two functions to assist in the computation
 ## of the inverse of square matrix with the ability to cache previously determined
 ## to void the costly computation associated
 
@@ -7,6 +7,8 @@
 ## dim(aMatrix) <- c(4,4)
 ## aCacheMatrix <- makeCacheMatrix(aMatrix)
 ## cacheSolve(aCacheMatrix)
+## cacheSolve(aCacheMatrix) ## Call a second time to confirm cache is returned
+## aMatrix %*% cacheSolve(aCacheMatrix) ## Confirm matrix returned is inverse 
 
 ## This function create custom matrix object that can cache the inversion of the
 ## matrix. Note this function expects a square numeric matrix 
